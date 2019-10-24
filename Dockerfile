@@ -1,6 +1,5 @@
-FROM docker:19
+FROM docker/compose:1.25.0-rc2
 
 RUN apk update
 RUN apk upgrade
-RUN apk add python python-dev py-pip build-base openssh-client
-RUN pip install docker-compose
+RUN apk add openssh-client
